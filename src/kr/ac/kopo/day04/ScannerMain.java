@@ -8,7 +8,7 @@ public class ScannerMain {
 		
 		System.out.print("문자를 입력 : ");
 		
-		char ch = sc.nextLine().charAt(0);
+		char ch = sc.nextLine().charAt(1);
 		System.out.println("ch : " + ch);
 		
 		System.out.print("문자열을 입력 : ");
@@ -27,6 +27,7 @@ public class ScannerMain {
 		
 		System.out.println("num2 = " + num2);
 		
+		sc.close();
 		
 	}
 

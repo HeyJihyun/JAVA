@@ -17,6 +17,9 @@ public class ScannerMain02 {
 		String msg = num01 % num02 == 0 ? "배수다" :"배수가 아니다";
 		
 		System.out.printf("%d는 %d의 배수 여부 : %s", num01, num02, msg);
+		
+		
+		sc.close();
 	}
 
 }
