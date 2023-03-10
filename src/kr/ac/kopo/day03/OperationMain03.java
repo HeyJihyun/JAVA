@@ -14,6 +14,7 @@ public class OperationMain03 {
 		boolean bool = num02 != 0 && num01 % num02 == 0;
 		
 		System.out.printf("%d는 %d의 배수판단 : %b\n", num01, num02, bool );
+		System.out.printf("%d는 %d의 배수판단 : %s\n", num01, num02, bool ? "Yes" : "no" );
 		
 	}
 
