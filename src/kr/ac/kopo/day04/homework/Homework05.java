@@ -10,7 +10,7 @@ public class Homework05 {
 		int book = sc.nextInt();
 
 		if (book < 0) {
-			System.out.println("잘못입력했습니다");
+			System.out.println("잘 못 입력했습니다");
 		} else if (book == 0) {
 			System.out.println("보유하고 있는 책 없다");
 		} else if (book == 1) {
@@ -28,7 +28,8 @@ public class Homework05 {
 			System.out.println(book + "book");
 			break;
 		default : 
-			System.out.println(book > 0 ? book + "books" : "잘 못 입력했습니다");
+			String msg = book > 0 ? book + "books" : "잘 못 입력했습니다";
+			System.out.println(msg);
 		}
 
 	}

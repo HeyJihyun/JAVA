@@ -14,7 +14,7 @@ public class Homework03 {
 		
 		if(num1 > num2) {
 			tmp = num1; 
-			if(num2 > num3) { 
+			if(num2 > num3) { // num1 > num2 > num3 
 				num1 = num3; 
 				num3 = tmp; 
 			} else if(num1 > num3) { // num1 > num3 > num2 
