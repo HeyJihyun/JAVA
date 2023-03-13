@@ -134,6 +134,28 @@ public class ForPractice02 {
 			System.out.println();
 		}
 		
+		// 문 13 for5 if1
+		System.out.println();
+		System.out.println("문제13 for5 if1");
+		for(int i = 1; i<=9; i++) {
+			if(i <= 5) {
+				for(int j = 1; j <= 5-i; j++) {
+					System.out.print(' ');
+				}
+				for(int j = 1; j <= i; j++ ) {
+					System.out.print('*');
+				}
+			} else {
+				for(int j = 1; j <= i-5; j++) {
+					System.out.print(' ');
+				}
+				for(int j = 1; j <= 10-i ; j++) {
+					System.out.print('*');
+				}
+				
+			}
+			System.out.println();
+		}
 		
 		// 문 13 for3 if3
 		System.out.println();
@@ -189,8 +211,6 @@ public class ForPractice02 {
 				} else {
 					System.out.print('*');
 				}
-//				char ch = 5-a < j ? '*' : ' ' ;
-//				System.out.print(ch);
 			}
 			System.out.println();
 		}
