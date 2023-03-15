@@ -89,11 +89,11 @@ public class Homework01 {
 		System.out.println("문제8. 구구단을 한라인에 3단씩 출력하시오.(반복문 최대 3개만 이용)"); 
 
 		for(int k = 2; k <= 9 ; k+=3) {
-			if(k == 8) {
-				System.out.printf("   *** %d단, %d단***   \n", k, k+1);
-			} else {
-				System.out.printf("   *** %d단, %d단, %d단***   \n", k, k+1, k+2);				
-			}
+//			if(k == 8) {
+//				System.out.printf("   *** %d단, %d단***   \n", k, k+1);
+//			} else {
+//				System.out.printf("   *** %d단, %d단, %d단***   \n", k, k+1, k+2);				
+//			}
 			for (int i = 1; i <= 9; i++) {
 				for (int j = k; j <= k + 2; j++) {
 					if(j == 10) {
