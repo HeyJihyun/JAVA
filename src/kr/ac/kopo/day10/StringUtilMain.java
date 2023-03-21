@@ -42,9 +42,19 @@ public class StringUtilMain {
 		System.out.println(su.compareTo(str, str2));
 		*/
 		
-		String str = "hello world";
-		String sub = "hello wor";
+		String str = "hello wor";
+		String sub = "hello";
 		System.out.println(su.compareTo(str, sub));
+		
+		ScannerUtil scan = new ScannerUtil();
+		
+		str = "hello world Java";
+		sub = "llo";
+		System.out.println(StringUtil.checkChar(str, 'l'));
+		
+		System.out.println(StringUtil.removeChar(str, 'o'));
+		
+		System.out.println(su.indexOf(str, sub));
 		
 	}
 	
