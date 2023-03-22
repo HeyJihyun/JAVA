@@ -49,7 +49,7 @@ public class StringUtilMain {
 		ScannerUtil scan = new ScannerUtil();
 		
 		str = "hello world Java";
-		sub = "llo";
+		sub = "o";
 		System.out.println(StringUtil.checkChar(str, 'l'));
 		
 		System.out.println(StringUtil.removeChar(str, 'o'));

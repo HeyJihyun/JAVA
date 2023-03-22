@@ -169,12 +169,11 @@ public class StringUtil {
 				if(sub.length() == 1) return i;
 				for (int j = 1; j < sub.length(); j++) {
 					if (str.charAt(i + j) == sub.charAt(j)) {
-						index = i;
+						return i;
 					}
 				}
 			}
 		}
-
 		return index;
 	}
 

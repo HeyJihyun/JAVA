@@ -1,9 +1,9 @@
 package kr.ac.kopo.day12.homework;
 
-import kr.ac.kopo.day11.homework.ScannerUtil;
-
+//Shape의 하위 클래스
 public class Circle extends Shape {
-	ScannerUtil sc = new ScannerUtil();
+
+	// 디폴트 생성자 반지름입력 및 넓이 계산
 	public Circle() {
 		int width = sc.nextInt("반지름의 길이를 입력하세요 : ");
 		
@@ -11,11 +11,13 @@ public class Circle extends Shape {
 		calArea();
 	}
 	
+	// 넓이 계산 메소드
 	@Override
 	public void calArea() {
-		super.area = width * width * Math.PI;
+		super.setArea(width * width * Math.PI);
 	}
 	
+	// 원의 정보 출력
 	@Override
 	public void info() {
 		System.out.print("반지름 " + width + "인 원의 ");
