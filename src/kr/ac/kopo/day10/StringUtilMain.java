@@ -56,6 +56,8 @@ public class StringUtilMain {
 		
 		System.out.println(su.indexOf(str, sub));
 		
+		System.out.println(su.endsWith("hello", "o") );
+		
 	}
 	
 

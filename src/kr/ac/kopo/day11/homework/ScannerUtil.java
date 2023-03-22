@@ -11,21 +11,23 @@ public class ScannerUtil {
 	
 	Scanner sc;
 	
-	ScannerUtil(){
+	public ScannerUtil(){
 		sc = new Scanner(System.in);
 	}
 	
-	char nextChar(String msg) {
+	public char nextChar(String msg) {
 		System.out.print(msg);
 		return sc.nextLine().charAt(0);
 	}
 	
-	int nextInt(String msg) {
+	public int nextInt(String msg) {
 		System.out.print(msg);
-		return sc.nextInt();
+		int num = sc.nextInt();
+		sc.nextLine();
+		return num;
 	}
 	
-	String nextStr(String msg) {
+	public String nextStr(String msg) {
 		System.out.print(msg);
 		return sc.nextLine();
 	}

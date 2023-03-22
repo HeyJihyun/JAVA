@@ -145,7 +145,8 @@ public class StringUtil {
 	 * @return
 	 */
 	boolean endsWith(String str, String sub) {
-
+		if(str.length() < sub.length()) return false;
+		
 		for (int i = str.length() - sub.length(); i < str.length(); i++) {
 			if (str.charAt(i) != sub.charAt(i - (str.length() - sub.length())))
 				return false;
