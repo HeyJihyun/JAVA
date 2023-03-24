@@ -12,7 +12,7 @@ public class Calculator {
 	 * 디폴트 생성자 - 매개변수 값이 없을 시 기본값 : 1
 	 */
 	Calculator() {
-		this(1, 1);
+		this(12, 1);
 	}
 	
 	Calculator(int num1) {

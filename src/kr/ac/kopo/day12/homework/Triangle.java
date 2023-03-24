@@ -2,6 +2,7 @@ package kr.ac.kopo.day12.homework;
 
 // Shape의 하위 클래스
 public class Triangle extends Shape{
+	static String name = "삼각형";
 
 	// 디폴트 생성자 width, height 입력, area 계산 및 초기화
 	public Triangle() {
@@ -23,7 +24,7 @@ public class Triangle extends Shape{
 	// 삼각형 정보 출력
 	@Override
 	public void info() {
-		System.out.print("밑변" + width + ", 높이" + height +"의 삼각형의 ");
+		System.out.print("밑변" + width + ", 높이" + height +"의 " + name + "의 ");
 		super.info();
 	}
 	
