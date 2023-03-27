@@ -11,6 +11,7 @@ public class BaseBall {
 
 	public void playGame(RandomNum r) {
 
+		System.out.print("세 자리 숫자를 입력해 주세요 : ");
 		// 플레이어 넘버 생성
 		PlayerNum p = new PlayerNum();
 		
@@ -25,7 +26,7 @@ public class BaseBall {
 		}
 		
 		// 잔여 횟수 출력 
-		System.out.println(--chance + "회 남았습니다.");;
+		System.out.println(--chance + "회 남았습니다.\n");;
 		
 		// 횟수가 0 이거나 out이 3이면 게임종료, 아니면 게임 재실행
 		if(chance == 0 || out == 3) {
