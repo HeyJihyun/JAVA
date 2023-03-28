@@ -1,7 +1,6 @@
 package kr.ac.kopo.homework.day0328;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
@@ -15,9 +14,12 @@ public class LottoView {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("게임수를 입력 : ");
 		int gameCnt = sc.nextInt();
+		int cnt = 0;
 		for(int i = 1; i <= gameCnt; i++) {
-			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
+//			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
+			if(!bool(getLotto6())) cnt++;
 		}
+		System.out.println(cnt);
 	}
 
 	// 방법1 Set 이용
@@ -107,22 +109,47 @@ public class LottoView {
 	}
 
 
-	
 	private int[] getLotto5() {
+	      int[] lottoNums = new int[6];
+	      
+	      lottoNums[0] = r.nextInt(45) + 1;
+	      for(int i = 1; i < lottoNums.length; i++) {
+	         int rNum;
+	         boolean bool;
+	         do {
+	            rNum = r.nextInt(45) + 1;
+	            bool = false;
+	            for(int j = 0; j < i; j++) {
+	               if(lottoNums[j] == rNum) {
+	                  bool = true;
+	                  break;
+	               }
+	            }
+	         } while(bool);
+	         lottoNums[i] = rNum;
+	      }
+	      
+	      return lottoNums;
+	   }
+
+
+	
+	
+	private int[] getLotto6() {
 		int[] lottoNums = new int[6];
 		
+		List<Integer> list = new ArrayList<>();
+		
+		for(int i = 1 ; i <= 45; i++) {
+			list.add(i);
+		}
+		
 		for(int i = 0; i < lottoNums.length; i++) {
-			lottoNums[i] = r.nextInt(45)+1;
-			for(int j = i-1; j >= 0; ) {
-				if(lottoNums[i] == lottoNums[j]) {
-					lottoNums[i] = r.nextInt(45)+1;
-				} else {
-					j--;
-				}
-			}
+			lottoNums[i] = list.remove(r.nextInt(list.size()));
 		}
 		
 		return lottoNums;
+		
 	}
 
 	
