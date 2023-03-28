@@ -1,6 +1,7 @@
 package kr.ac.kopo.homework.day0328;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
@@ -14,12 +15,9 @@ public class LottoView {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("게임수를 입력 : ");
 		int gameCnt = sc.nextInt();
-		int cnt = 0;
 		for(int i = 1; i <= gameCnt; i++) {
-//			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
-			if(!bool(getLotto6())) cnt++;
+			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
 		}
-		System.out.println(cnt);
 	}
 
 	// 방법1 Set 이용
