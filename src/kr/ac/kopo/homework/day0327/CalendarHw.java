@@ -46,6 +46,7 @@ public class CalendarHw {
 		int select = select(3);//1~3만 선택 가능
 		if(select == 3) return;
 		calendarSelect(select);
+			
 	}
 	
 	public void calendarSelect(int select) {
@@ -64,14 +65,20 @@ public class CalendarHw {
 	}
 	
 	// 1~max 선택 범위 메소드
-	public int select(int max) {
+	public int select(int max){
 		int select;
 		Scanner sc = new Scanner(System.in);
 		do {
-			select = sc.nextInt();			
-			if(select < 1 || select > max) 
-				System.out.println("다시 입력하세요.");				
-			else break;
+			try {
+				select = sc.nextInt();	
+				if(select < 1 || select > max) // 범위 외의 숫자가 들어올 경우 예외발생
+					throw new Exception();			
+				else break;				
+			} catch(Exception e) { // 범위 밖 숫자나 int형이 아닌 문자가 들어올 경우 실행
+				System.out.println("잘못입력 하셨습니다. 다시 입력해주세요.");
+				sc.nextLine(); // 버퍼 비워주기
+				select = 0; // select 초기화
+			}
 		}while(true);
 		
 		return select;
