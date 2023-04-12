@@ -67,6 +67,7 @@ public class FileClose {
 		close(bos);
 		close(fos);
 	}
+
 	
 
 }
