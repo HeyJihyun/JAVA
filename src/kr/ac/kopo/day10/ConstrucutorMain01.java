@@ -10,26 +10,26 @@ package kr.ac.kopo.day10;
  */
 
 class Dog {
-	
-	String name;
-	int age;
-	
-	Dog(){
-		System.out.println("디폴트 생성자 Dog() 호출...");
-	}
-	
-	Dog(int i){
-		System.out.println("Dog(int) 생성자 호출...");
-		age = i;
-	}
+
+    String name;
+    int age;
+
+    Dog() {
+        System.out.println("디폴트 생성자 Dog() 호출...");
+    }
+
+    Dog(int i) {
+        System.out.println("Dog(int) 생성자 호출...");
+        age = i;
+    }
 }
 
 public class ConstrucutorMain01 {
-	
-	public static void main(String[] args) {
-		
-		new Dog(10);
-		
-	}
+
+    public static void main(String[] args) {
+
+        new Dog(10);
+
+    }
 
 }

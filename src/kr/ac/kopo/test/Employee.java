@@ -6,16 +6,16 @@ public class Employee {
     private int salary;
     private String grade;
 
-    public void info(){
+    public void info() {
     }
 
-    public Employee(){
+    public Employee() {
     }
 
-    public Employee(int no, String name, int salary, String grade){
+    public Employee(int no, String name, int salary, String grade) {
     }
 
-    public void setSalary(int setSalary){
+    public void setSalary(int setSalary) {
     }
 
 }

@@ -6,7 +6,7 @@ public class Test {
     protected String pass;
     public String name;
 
-    public void info(){
+    public void info() {
     }
 
 }

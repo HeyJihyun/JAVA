@@ -1,13 +1,13 @@
 package kr.ac.kopo.day15;
 
-public class OddMismatchException extends Exception{
+public class OddMismatchException extends Exception {
 
-	public OddMismatchException() {
-		super();
-	}
+    public OddMismatchException() {
+        super();
+    }
 
-	public OddMismatchException(String message) {
-		super(message);
-	}
-	
+    public OddMismatchException(String message) {
+        super(message);
+    }
+
 }

@@ -11,11 +11,11 @@ package kr.ac.kopo.day17.lotto05;
  */
 
 public class LottoMain {
-	public static void main(String[] args) {
-		LottoView lotto = new LottoView();
-		
-		lotto.start();
-		
-	}
+    public static void main(String[] args) {
+        LottoView lotto = new LottoView();
+
+        lotto.start();
+
+    }
 
 }
